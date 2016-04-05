@@ -1,4 +1,4 @@
-System.register(['angular2/core', './repo-list.component', './repo-search.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,35 +10,27 @@ System.register(['angular2/core', './repo-list.component', './repo-search.compon
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, repo_list_component_1, repo_search_component_1;
-    var AppComponent;
+    var core_1;
+    var RepoListComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (repo_list_component_1_1) {
-                repo_list_component_1 = repo_list_component_1_1;
-            },
-            function (repo_search_component_1_1) {
-                repo_search_component_1 = repo_search_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
-                    this.title = "Github Viewer";
+            RepoListComponent = (function () {
+                function RepoListComponent() {
                 }
-                AppComponent = __decorate([
+                RepoListComponent = __decorate([
                     core_1.Component({
-                        selector: 'ng-app',
-                        templateUrl: '/static/ng-main/app/templates/app.component.html',
-                        directives: [repo_list_component_1.RepoListComponent, repo_search_component_1.RepoSearchComponent],
+                        selector: 'repo-list',
+                        templateUrl: '/static/ng-main/app/templates/repoList.component.html',
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], RepoListComponent);
+                return RepoListComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("RepoListComponent", RepoListComponent);
         }
     }
 });

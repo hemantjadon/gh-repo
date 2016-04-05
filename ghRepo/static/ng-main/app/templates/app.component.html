@@ -1,0 +1,22 @@
+<style>
+    div.page{
+        min-height: 100vh;
+        background-color: #fafafa;
+    }
+    div.page .heading h1{
+        margin: 0;
+        text-align: center;
+        font-weight: 200;
+        font-size: 4em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+</style>
+<div class="page">
+    <div class="heading">
+        <h1>{{title}}</h1>
+        {{searchTerm}}
+    </div>
+    <repo-search></repo-search>
+    <repo-list></repo-list>
+</div>

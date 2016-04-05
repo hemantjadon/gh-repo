@@ -8,8 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
 		
 		<!-- 1. Load libraries -->
 		 <!--IE required polyfills, in this exact order -->
@@ -23,6 +23,7 @@
 		<script src={% static "node_modules/rxjs/bundles/Rx.js" %}></script>
 		<script src={% static "node_modules/angular2/bundles/angular2.dev.js" %}></script>
 		<script src={% static "node_modules/angular2/bundles/router.dev.js" %}></script>
+		<script src={% static "node_modules/angular2/bundles/http.dev.js" %}></script>
 
 		<!-- 2. Configure SystemJS -->
 		<script>
@@ -48,5 +49,6 @@
    </head>
    <body>
 	   <ng-app></ng-app>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
    </body>
 </html>
